@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Oppenheimer</title>
+</head>
+<body>
+    <div class="background">
+        <h1>Oppenheimer: The Man Behind the Bomb</h1>
+        <div class="container">
+            <div class="image-container">
+                <img src="l-intro-1691003642.jpg" alt="Oppenheimer" width="300" height="200">
+                <div class="caption">Oppenheimer in the University.</div>
+            </div>
+            <div class="text">
+                <p>J. Robert Oppenheimer was an American theoretical physicist and professor of physics at the University of California, Berkeley. He is best known for his role as the head of the Los Alamos Laboratory during the Manhattan Project, where he played a key role in the development of the first nuclear weapons.</p>
+                <p>Oppenheimer is often referred to as the "father of the atomic bomb". After the war, he became a chief advisor to the newly-created United States Atomic Energy Commission, where he advocated for international control of nuclear power and opposed the development of the hydrogen bomb.</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" src="Can You Hear The Music x Cornfield Chase  EMOTIONAL VERSION (Oppenheimer x Interstellar).mp3" preload="auto" loop></audio>
+    <button id="toggleButton" onclick="toggleMusic()">Toggle Music</button>
+
+    <script>
+        var bgMusic = document.getElementById('bgMusic');
+        var toggleButton = document.getElementById('toggleButton');
+
+        function toggleMusic() {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                toggleButton.textContent = 'Pause Music';
+            } else {
+                bgMusic.pause();
+                toggleButton.textContent = 'Play Music';
+            }
+        }
+    </script>
+</body>
+</html>
